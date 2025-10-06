@@ -1,7 +1,6 @@
-﻿using System.Diagnostics;
+﻿namespace tabuleiro {
+    class Posicao {
 
-namespace tabuleiro {
-    internal class Posicao {
         public int linha { get; set; }
         public int coluna { get; set; }
 
@@ -10,14 +9,10 @@ namespace tabuleiro {
             this.coluna = coluna;
         }
 
-
         public override string ToString() {
             return linha
-            + ", "
-            + coluna;
-
-
+                + ", "
+                + coluna;
         }
-
     }
 }
