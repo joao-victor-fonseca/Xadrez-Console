@@ -33,10 +33,10 @@
             return false;
         }
 
-        public bool podeMoverPara(Posicao pos) {
-            return movimentosPossiveis()[pos.linha, pos.coluna];
+        public bool movimentoPossivel(Posicao pos) {
+            return movimentoPossivel()[pos.linha, pos.coluna];
         }   
 
-        public abstract bool[,] movimentosPossiveis();
+        public abstract bool[,] movimentoPossivel();
     }
 }
